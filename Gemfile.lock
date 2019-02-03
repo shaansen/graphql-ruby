@@ -41,6 +41,7 @@ GEM
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
+    bcrypt (3.1.12-x86-mingw32)
     bindex (0.5.0)
     builder (3.2.3)
     byebug (10.0.2)
@@ -133,6 +134,10 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    search_object (1.2.0)
+    search_object_graphql (0.1)
+      graphql (~> 1.5)
+      search_object (~> 1.2)
     selenium-webdriver (3.141.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2, >= 1.2.2)
@@ -171,6 +176,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
@@ -180,6 +186,8 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.4)
   sass-rails (~> 5.0)
+  search_object (= 1.2.0)
+  search_object_graphql (= 0.1)
   selenium-webdriver
   sqlite3
   turbolinks (~> 5)
